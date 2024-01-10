@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        <code>
+            /* Copy Classes and Keyframes */
+            /* Pulse */
+            .Pulse{
+                animation: Pulse 2s ease;
+            }
+             @keyframes Pulse {
+                0%{
+                    transform: scale(0.98);
+                }
+                25%{
+                    transform: scale(1.3);
+                }
+                50%{
+                    transform: scale(1);
+                }
+                75%{
+                    transform: scale(1.3);
+                }
+                100%{
+                    transform: scale(1);
+                }
+             }   
+            /* Blinking Rotate Left */
+            .BlinkingRotateLeft{
+                animation: BlinkingRotateLeft 0.8s ease-in-out;
+                
+            }
+            
+               
+            
+            
+            @keyframes BlinkingRotateLeft {
+                0%{
+                    position: relative;
+                    transform: scale(1.2);
+                    bottom: 100px;
+                    opacity: 1;
+                    
+                }
+                
+                
+                25%{
+                   
+                    
+                    position: relative;
+                    Left: 200px;
+                    opacity: 0;
+                }   
+                50%{
+                    position: relative;
+                    top: 100px;
+                    opacity: 1;
+                }
+                
+                75%{
+                    position: relative;
+                    right: 200px;
+                    opacity: 0;
+                }
+                100%{
+                    position: relative;
+                    bottom: 100px;
+                    opacity: 1;
+                }
+            }
+            /* Blinking Rotate Right */
+            .BlinkingRotateRight{
+                animation: BlinkingRotateRight 0.8s ease-in-out;
+                
+            }
+            
+               
+            
+            
+            @keyframes BlinkingRotateRight {
+                0%{
+                    position: relative;
+                    transform: scale(1.2);
+                    bottom: 100px;
+                    opacity: 1;
+                    
+                }
+                
+                
+                25%{
+                    position: relative;
+                    right: 200px;
+                    opacity: 0;
+                }   
+                   
+                    
+                50%{
+                    position: relative;
+                    top: 100px;
+                    opacity: 1;
+                }
+                
+                75%{
+                    position: relative;
+                    left: 200px;
+                    opacity: 0;
+                }
+                100%{
+                    position: relative;
+                    bottom: 100px;
+                    opacity: 1;
+                }
+            }
+            /* Blinking   */
+            .Blinking{
+                animation: Blinking 2s ease;
+            }
+            @keyframes Blinking {
+                0%{
+                    opacity: 0;
+                }
+                25%{
+                    opacity: 1;
+                }
+                50%{
+                    opacity: 0;
+                }
+                75%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+            /* Complex Rotating Left */
+            .ComplexRotatingleft{
+                animation: ComplexRotatingleft 0.8s ease-in-out;
+              
+            }
+               
+               
+            
+            
+            @keyframes ComplexRotatingleft {
+                0%{
+                    position: relative;
+                    transform: scale(1.2);
+                    bottom: 100px;
+                    transform: rotate(360deg);
+                    
+                }
+                
+                
+                25%{
+                    position: relative;
+                    left: 200px;
+                }   
+                    
+                    
+                            
+                50%{
+                    position: relative;
+                    top: 100px;
+                }
+                           
+                75%{
+                    position: relative;
+                    right: 200px;
+                }
+                100%{
+                    position: relative;
+                    bottom: 100px;
+                }
+            }
+            /* Complex Rotating */
+            .ComplexRotating{
+                animation: ComplexRotating 0.8s ease-in-out;
+              
+            }
+               
+               
+            
+            
+            @keyframes ComplexRotating {
+                0%{
+                    position: relative;
+                    transform: scale(1.2);
+                    bottom: 100px;
+                    transform: rotate(360deg);
+                    
+                }
+                
+                
+                25%{
+                      
+                    position: relative;
+                    right: 200px;
+                            
+                }   
+                50%{
+                    position: relative;
+                    top: 100px;
+                }
+                           
+                75%{
+                    position: relative;
+                    left: 200px;
+                }
+                100%{
+                    position: relative;
+                    bottom: 100px;
+                }
+            }
+                           
+                    
+                         
+                    
+                    
+            
+             
+            /* Fade right effects*/
+            .Faderight{
+                animation: Faderight 2s ease;
+            }
+            @keyframes Faderight {
+                0%{
+                    position: relative;
+                    left: 100px;
+                    opacity: 0;
+                }
+                50%{
+                    position: relative;
+                    left: 50px;
+                    opacity: 0.3;
+                }
+                50%{
+                    position: relative;
+                    left: 30px;
+                    opacity: 0.5;
+                }
+                100%{
+                    position: relative;
+                    left: 10px;
+                    opacity: 1;
+                }
+                  
+            }
+            /* Fade left effects*/
+            .Fadeleft{
+                animation: Fadeleft 2s ease;
+            }
+            @keyframes Fadeleft {
+                0%{
+                    position: relative;
+                    right: 100px;
+                    opacity: 0;
+                }
+                50%{
+                    position: relative;
+                    right: 50px;
+                    opacity: 0.3;
+                }
+                50%{
+                    position: relative;
+                    right: 30px;
+                    opacity: 0.5;
+                }
+                100%{
+                    position: relative;
+                    right: 10px;
+                    opacity: 1;
+                }
+                  
+            }
+            /* Fading effects */
+            .Fading{
+                animation: Fade 2s ease forwards;
+            }
+            @keyframes Fade {
+                0%{
+                    opacity: 1;
+                }
+               
+                100%{
+                   opacity: 0;
+                }
+            }
+            /* Scaling Efects */
+            .scaling{
+                animation: Scale 2s ease ;
+            }
+            @keyframes Scale{
+                0%{
+                    transform: scale(1.7);
+                }
+                30%{
+                    transform: scale(0);
+                }
+                60%{
+                    transform: scale(2);
+                }
+                    
+            
+            }
+            /* Shaking Effect */
+            .shake{
+                animation: shake 0.7s ease infinite;
+            }
+            
+            @keyframes shake {
+                0%{
+                    
+                    transform: rotate(3deg);
+                }
+                30%{
+                    
+                    transform: rotate(-3deg);
+                }
+                60%{
+                 
+                    transform: rotate(3deg);
+                }
+                80%{
+                    
+                    transform: rotate(-3deg);
+                }
+                100%{
+                    
+                    transform: rotate(3deg);
+                }
+                    
+            
+            }
+            /* Rotating Effect */
+            .Roll{
+                animation: roll 2s ease ;
+            
+            }
+            @keyframes roll {
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+            /* Stretch */
+            .Stretch{
+                animation: stretch 5s ease ;
+            }
+            @keyframes stretch {
+                0%{
+                    width: 250px;
+                }
+                50%{
+                    width: 400px;
+                }
+                80%{
+                    width: 200px;
+                }
+                100%{
+                    width: 250px;
+                    
+                }
+            }
+            /* Wobbling */
+            .Wobbling{
+                animation: Wobbling 2s ease;
+            }
+            
+            @keyframes Wobbling {
+                0%{
+                    border-radius: 30% 50% 50% 50%;
+                    padding-top: 30px;
+                }
+                25%{
+                    border-radius: 50% 30% 50% 50%;
+                    padding-left:  10px; ;
+                }
+                50%{
+                    border-radius: 50% 50% 30% 50%;
+                    padding-right: 15px;
+                }
+                50%{
+                    border-radius: 50% 50% 50% 30%;
+                    padding-bottom: 20px;
+                }
+            }
+            /* Colorchanging */
+            .Colorchanging{
+                animation: Colorchanging 2s ease;
+            }
+            
+                   @keyframes Colorchanging {
+                    0%{
+                        background-image: linear-gradient(to right top, #342b62, #1b871d, #9c0984, #2cb388, #6cc76c);
+                        transform: scale(1);
+                    }
+                    25%{
+                        background-image: linear-gradient(to right top, #622b5c, #731b87, #9c9a09, #2eb32c, #756cc7);
+                        transform: scale(1.02);
+                    }
+                    50%{
+                        background-image: linear-gradient(to right top, #690000, #391d30, #110d17, #882cb3, #ff0b0b);
+                        transform: scale(1);
+                    }
+                    75%{
+                        background-image: linear-gradient(to right top, #63a545, #4dbdb0, #170707, #1a0225, #282804);
+                        transform: scale(1.02);
+                    }
+                    100%{
+                        background-image: linear-gradient(to right top, #a88222, #c27210, #8aa718, #1cacbf, #08d408);
+                        transform: scale(1);
+                    }
+            
+                   } 
+                    
+                    
+            
+        </code>
+    </pre>
+</body>
+</html>
